@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainScreen">
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -16,22 +15,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button"
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="add new place"
-            android:backgroundTint="@color/button_color"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:ems="10"
+            android:hint="login"
+            android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="pass"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"/>
+
 
         <Button
-            android:id="@+id/myScope_btn"
+            android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="show tasks"
+            android:text="login"
             android:backgroundTint="@color/button_color"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="20dp"
@@ -42,6 +55,7 @@
         <!--ImageView, TextView, ButtonView etc.-->
 
     </LinearLayout>
+
 
 
 

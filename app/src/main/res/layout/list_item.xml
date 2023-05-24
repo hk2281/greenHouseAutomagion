@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="30dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#319EC0AC">
+
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/greenhouse250" />
+
+        <!-- Текст Place Name -->
+        <TextView
+            android:id="@+id/textViewPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewIcon"
+            android:layout_alignTop="@id/imageViewIcon"
+            android:layout_marginStart="16dp"
+            android:text="Place Name"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Имя -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewPlaceName"
+            android:layout_marginStart="8dp"
+            android:text="Name"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Иконка капли -->
+        <ImageView
+            android:id="@+id/imageViewWaterDrop"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/textViewName"
+            android:layout_toRightOf="@+id/imageViewIcon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/drop" />
+
+        <!-- Количество миллилитров -->
+        <TextView
+            android:id="@+id/textViewMilliliters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignBaseline="@id/imageViewWaterDrop"
+            android:layout_toRightOf="@id/imageViewWaterDrop"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:text="500 mL"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Иконка часов -->
+        <ImageView
+            android:id="@+id/imageViewClock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/textViewName"
+            android:layout_toRightOf="@id/textViewMilliliters"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/clock" />
+
+        <!-- Время -->
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewName"
+            android:layout_toRightOf="@id/imageViewClock"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="10:00 AM"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- Круглая зеленая кнопка с иконкой капли -->
+
+
+        <ImageView
+            android:id="@+id/backgroudShape"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rounded_button_bg">
+
+
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/imageButtonGreen"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/backgroudShape"
+            android:layout_alignTop="@id/backgroudShape"
+            android:layout_alignRight="@+id/backgroudShape"
+            android:layout_alignBottom="@+id/backgroudShape"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/waterdrop"
+            android:padding="4dp"
+            android:src="@drawable/waterdrop" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

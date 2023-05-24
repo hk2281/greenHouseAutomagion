@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EditPlase">
+
+
+    <RelativeLayout
+        android:id="@+id/EditrelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="147dp">
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/EditimageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/greenhouse250"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Editcardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toBottomOf="@id/EditimageView4"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EditimageView4">
+
+            <EditText
+                android:id="@+id/Editplace_name"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:ems="@integer/material_motion_duration_long_2"
+                android:inputType="text"
+                android:hint="Enter Name"
+                android:textSize="25dp"
+                android:layout_marginEnd="14dp"
+                android:padding="20dp"
+                android:layout_marginStart="14dp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Editcardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toBottomOf="@id/Editcardview1"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/EditimageView4">
+
+            <EditText
+                android:id="@+id/Editp_lace_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:ems="@integer/material_motion_duration_long_2"
+                android:inputType="datetime"
+                android:hint="enter time"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toBottomOf="@id/Editcardview2"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:id="@+id/EdittextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Select days"
+            android:textSize="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:id="@+id/Editdaycheckbox_line"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintTop_toBottomOf="@id/EditimageView4">
+
+            <CheckBox
+                android:id="@+id/EditcheckBox_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"/>
+
+            <CheckBox
+                android:id="@+id/EditcheckBox_T"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:layout_marginTop="12dp"/>
+            <CheckBox
+                android:id="@+id/EditcheckBox_W"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W"
+                android:layout_marginTop="12dp"/>
+            <CheckBox
+                android:id="@+id/EditcheckBox_Th"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:layout_marginTop="12dp"/>
+            <CheckBox
+                android:id="@+id/EditcheckBox_F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:layout_marginTop="12dp"/>
+            <CheckBox
+                android:id="@+id/EditcheckBox_S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:layout_marginTop="12dp"/>
+            <CheckBox
+                android:id="@+id/EditcheckBox_St"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:layout_marginTop="12dp"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/EdittextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="water volume"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="25dp"
+            android:layout_gravity="bottom|center"/>
+
+        <SeekBar
+            android:id="@+id/EditseekBar"
+            android:layout_width="385dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Editcardview4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toBottomOf="@id/cardview3"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/EditimageView4">
+
+
+            <Switch
+                android:id="@+id/Editswitch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blinds"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <Switch
+                android:id="@+id/Editswitch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ventilation"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Edittest_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/button_color"
+        android:text="save"
+        android:textColorHighlight="#5F0909"
+        android:textColorLink="#A71515"
+        app:iconTint="#BE1111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="45dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/remove_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#950B0B"
+        android:text="remove"
+        android:textColorHighlight="#5F0909"
+        android:textColorLink="#A71515"
+        app:iconTint="#BE1111"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Edittest_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
